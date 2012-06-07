@@ -6,6 +6,7 @@ for g in $gs; do
     printf "\n\n *** $g ***\n\n"
     hub set $g
     hub info
+    ghc --version
     make clean
     make
     ./smoke.exe
